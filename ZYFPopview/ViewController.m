@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ZYFPopView.h"
 
 @interface ViewController ()
 
+@property (nonatomic, strong)ZYFPopView *popView;
 @end
 
 @implementation ViewController
@@ -25,5 +27,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showTopClick:(id)sender {
+    
+    [self popview:ZYFPopViewStyleTop];
+}
+
+- (IBAction)showBottomClick:(id)sender {
+    
+    [self popview:ZYFPopViewStyleBottom];
+    
+}
+
+- (IBAction)showCenterClick:(id)sender {
+    
+    [self popview:ZYFPopViewStyleCenter];
+}
+
+- (IBAction)showCenterAnimationClick:(id)sender {
+}
+
+-(void)popview:(ZYFPopViewStyle)style{
+    
+    self.popView = [[ZYFPopView alloc]initInView:[UIApplication sharedApplication].keyWindow style:style images:(NSMutableArray*)@[@"tz",@"sina",@"gg",@"weChat",@"qq",@"sp"] rows:(NSMutableArray*)@[@"12",@"sina",@"gg",@"we",@"QQ",@"sp"] doneBlock:^(NSInteger selectIndex) {
+        
+        NSLog(@"%ld",selectIndex);
+        
+    } cancleBlock:^{
+        
+    }];
+    
+    [self.popView showPopView];
+    
+}
 
 @end

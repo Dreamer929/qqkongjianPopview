@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D706C40B5AA77C743AC51B6 /* libPods-ZYFPopview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2816C21746BD2B81DDC9FB /* libPods-ZYFPopview.a */; };
 		95A5D6801F3D5B83008B7805 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D67F1F3D5B83008B7805 /* main.m */; };
 		95A5D6831F3D5B83008B7805 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6821F3D5B83008B7805 /* AppDelegate.m */; };
 		95A5D6861F3D5B83008B7805 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6851F3D5B83008B7805 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		95A5D68E1F3D5B83008B7805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D68C1F3D5B83008B7805 /* LaunchScreen.storyboard */; };
 		95A5D6991F3D5B83008B7805 /* ZYFPopviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6981F3D5B83008B7805 /* ZYFPopviewTests.m */; };
 		95A5D6A41F3D5B83008B7805 /* ZYFPopviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6A31F3D5B83008B7805 /* ZYFPopviewUITests.m */; };
+		95A5D6B31F3D5BCE008B7805 /* ZYFPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */; };
+		95A5D6BC1F3D98CF008B7805 /* baidu.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BA1F3D98CF008B7805 /* baidu.png */; };
+		95A5D6BD1F3D98CF008B7805 /* alipay.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BB1F3D98CF008B7805 /* alipay.png */; };
+		95A5D6BF1F3D9AEB008B7805 /* cha.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BE1F3D9AEB008B7805 /* cha.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F2816C21746BD2B81DDC9FB /* libPods-ZYFPopview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYFPopview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		796362DD9B992A7F4B24E9D8 /* Pods-ZYFPopview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFPopview.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFPopview/Pods-ZYFPopview.release.xcconfig"; sourceTree = "<group>"; };
 		95A5D67B1F3D5B82008B7805 /* ZYFPopview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFPopview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5D67F1F3D5B83008B7805 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95A5D6811F3D5B83008B7805 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,12 @@
 		95A5D69F1F3D5B83008B7805 /* ZYFPopviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYFPopviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A5D6A31F3D5B83008B7805 /* ZYFPopviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFPopviewUITests.m; sourceTree = "<group>"; };
 		95A5D6A51F3D5B83008B7805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A5D6B11F3D5BCE008B7805 /* ZYFPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFPopView.h; sourceTree = "<group>"; };
+		95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFPopView.m; sourceTree = "<group>"; };
+		95A5D6BA1F3D98CF008B7805 /* baidu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baidu.png; sourceTree = "<group>"; };
+		95A5D6BB1F3D98CF008B7805 /* alipay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alipay.png; sourceTree = "<group>"; };
+		95A5D6BE1F3D9AEB008B7805 /* cha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cha.png; sourceTree = "<group>"; };
+		A0CEB789DF0C43D1B0513BC9 /* Pods-ZYFPopview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFPopview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFPopview/Pods-ZYFPopview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D706C40B5AA77C743AC51B6 /* libPods-ZYFPopview.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00974081A8BE745DB878149C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F2816C21746BD2B81DDC9FB /* libPods-ZYFPopview.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923743DE3DE6C7BCC2550013 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0CEB789DF0C43D1B0513BC9 /* Pods-ZYFPopview.debug.xcconfig */,
+				796362DD9B992A7F4B24E9D8 /* Pods-ZYFPopview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		95A5D6721F3D5B82008B7805 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +116,8 @@
 				95A5D6971F3D5B83008B7805 /* ZYFPopviewTests */,
 				95A5D6A21F3D5B83008B7805 /* ZYFPopviewUITests */,
 				95A5D67C1F3D5B82008B7805 /* Products */,
+				923743DE3DE6C7BCC2550013 /* Pods */,
+				00974081A8BE745DB878149C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +143,11 @@
 				95A5D68C1F3D5B83008B7805 /* LaunchScreen.storyboard */,
 				95A5D68F1F3D5B83008B7805 /* Info.plist */,
 				95A5D67E1F3D5B83008B7805 /* Supporting Files */,
+				95A5D6B11F3D5BCE008B7805 /* ZYFPopView.h */,
+				95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */,
+				95A5D6BE1F3D9AEB008B7805 /* cha.png */,
+				95A5D6BA1F3D98CF008B7805 /* baidu.png */,
+				95A5D6BB1F3D98CF008B7805 /* alipay.png */,
 			);
 			path = ZYFPopview;
 			sourceTree = "<group>";
@@ -147,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95A5D6A81F3D5B83008B7805 /* Build configuration list for PBXNativeTarget "ZYFPopview" */;
 			buildPhases = (
+				0BE70A23F1C1CCA28AC3CE42 /* [CP] Check Pods Manifest.lock */,
 				95A5D6771F3D5B82008B7805 /* Sources */,
 				95A5D6781F3D5B82008B7805 /* Frameworks */,
 				95A5D6791F3D5B82008B7805 /* Resources */,
+				0AEF3226C6637710D0D22DA3 /* [CP] Embed Pods Frameworks */,
+				8DFCAD34E2B03F14E497241E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,8 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A5D6BF1F3D9AEB008B7805 /* cha.png in Resources */,
 				95A5D68E1F3D5B83008B7805 /* LaunchScreen.storyboard in Resources */,
 				95A5D68B1F3D5B83008B7805 /* Assets.xcassets in Resources */,
+				95A5D6BD1F3D98CF008B7805 /* alipay.png in Resources */,
+				95A5D6BC1F3D98CF008B7805 /* baidu.png in Resources */,
 				95A5D6891F3D5B83008B7805 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +315,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AEF3226C6637710D0D22DA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYFPopview/Pods-ZYFPopview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BE70A23F1C1CCA28AC3CE42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DFCAD34E2B03F14E497241E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZYFPopview/Pods-ZYFPopview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95A5D6771F3D5B82008B7805 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,6 +370,7 @@
 			files = (
 				95A5D6861F3D5B83008B7805 /* ViewController.m in Sources */,
 				95A5D6831F3D5B83008B7805 /* AppDelegate.m in Sources */,
+				95A5D6B31F3D5BCE008B7805 /* ZYFPopView.m in Sources */,
 				95A5D6801F3D5B83008B7805 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,24 +520,28 @@
 		};
 		95A5D6A91F3D5B83008B7805 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CEB789DF0C43D1B0513BC9 /* Pods-ZYFPopview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQPLB98WMN;
 				INFOPLIST_FILE = ZYFPopview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyfDreamer.ex.ZYFPopview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxi.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		95A5D6AA1F3D5B83008B7805 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796362DD9B992A7F4B24E9D8 /* Pods-ZYFPopview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QQPLB98WMN;
 				INFOPLIST_FILE = ZYFPopview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyfDreamer.ex.ZYFPopview;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moxi.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +615,7 @@
 				95A5D6AA1F3D5B83008B7805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A5D6AB1F3D5B83008B7805 /* Build configuration list for PBXNativeTarget "ZYFPopviewTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +624,7 @@
 				95A5D6AD1F3D5B83008B7805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95A5D6AE1F3D5B83008B7805 /* Build configuration list for PBXNativeTarget "ZYFPopviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +633,7 @@
 				95A5D6B01F3D5B83008B7805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
