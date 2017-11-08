@@ -48,13 +48,28 @@
 
 -(void)popview:(ZYFPopViewStyle)style{
     
-    self.popView = [[ZYFPopView alloc]initInView:[UIApplication sharedApplication].keyWindow style:style images:(NSMutableArray*)@[@"tz",@"sina",@"gg",@"weChat",@"qq",@"sp"] rows:(NSMutableArray*)@[@"12",@"sina",@"gg",@"we",@"QQ",@"sp"] doneBlock:^(NSInteger selectIndex) {
-        
-        NSLog(@"%ld",selectIndex);
-        
-    } cancleBlock:^{
-        
-    }];
+    NSInteger i = 1;
+    if(i){
+        self.popView = [[ZYFPopView alloc]initInView:[UIApplication sharedApplication].keyWindow style:style images:(NSMutableArray*)@[@"alipay",@"baidu",@"sm"] rows:(NSMutableArray*)@[@"12",@"sina",@"sm"] doneBlock:^(NSInteger selectIndex) {
+            
+            NSLog(@"%ld",selectIndex);
+            
+        } cancleBlock:^{
+            
+        }];
+    }else{
+        self.popView = [[ZYFPopView alloc]initInView:[UIApplication sharedApplication].keyWindow style:style images:(NSMutableArray*)@[@"tz",@"sina",@"gg",@"weChat",@"qq",@"sp"] rows:(NSMutableArray*)@[@"12",@"sina",@"gg",@"we",@"QQ",@"sp"] doneBlock:^(NSInteger selectIndex) {
+            
+            NSLog(@"%ld",selectIndex);
+            
+        } cancleBlock:^{
+            
+        }];
+    }
+    
+   
+    
+    
     
     [self.popView showPopView];
     

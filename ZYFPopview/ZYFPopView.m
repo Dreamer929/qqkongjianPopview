@@ -74,14 +74,14 @@
                 break;
             case ZYFPopViewStyleBottom:
             {
-                self.popViewStart = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 120);
-                self.popViewEnd = CGRectMake(0, self.bounds.size.height - 120, self.bounds.size.width, 120);
+                self.popViewStart = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 150);
+                self.popViewEnd = CGRectMake(0, self.bounds.size.height - 150, self.bounds.size.width, 150);
             }
                 break;
             case ZYFPopViewStyleCenter:
             {
-                self.popViewStart = CGRectMake(0, -120, self.bounds.size.width, 120);
-                self.popViewEnd = CGRectMake(0, self.bounds.size.height/2 - 60, self.bounds.size.width, 120);
+                self.popViewStart = CGRectMake(self.bounds.size.width/2, self.bounds.size.height/2, 0, 0);
+                self.popViewEnd = CGRectMake(0, self.bounds.size.height/2 - self.bounds.size.width/2, self.bounds.size.width, self.bounds.size.width);
             }
                 break;
                 
@@ -107,9 +107,16 @@
     self.popBaseView.backgroundColor = [UIColor whiteColor];
     [self.shadeView addSubview:self.popBaseView];
     
-    [UIView animateWithDuration:0.3 animations:^{
-        self.popBaseView.frame = end;
-    }];
+    if (self.popviewStyle == ZYFPopViewStyleCenter) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.popBaseView.frame = end;
+        }];
+    }else{
+        [UIView animateWithDuration:0.3 animations:^{
+            self.popBaseView.frame = end;
+        }];
+    }
+   
     
     CGFloat cancelTop = 0.0;
     
@@ -119,7 +126,7 @@
         CGFloat padding;
         if (self.popviewStyle == ZYFPopViewStyleTop) {
             padding = 50;
-            cancelTop = 20;
+            cancelTop = 40;
         }else{
             padding = 38;
             cancelTop = 0;
@@ -181,13 +188,23 @@
 #pragma mark -tap
 
 -(void)handleTapGesture:(UITapGestureRecognizer*)tap{
-    [UIView animateWithDuration:0.3 animations:^{
-        self.popBaseView.frame = self.popViewStart;
-        
-    } completion:^(BOOL finished) {
-        self.shadeView.alpha = 0;
-        [self removeFromSuperview];
-    }];
+    
+    if (self.popviewStyle == ZYFPopViewStyleCenter) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.popBaseView.frame = self.popViewStart;
+            self.shadeView.alpha = 0;
+            [self removeFromSuperview];
+        }];
+    }else{
+        [UIView animateWithDuration:0.3 animations:^{
+            self.popBaseView.frame = self.popViewStart;
+            
+        } completion:^(BOOL finished) {
+            self.shadeView.alpha = 0;
+            [self removeFromSuperview];
+        }];
+    }
+   
 }
 
 #pragma mark -click
@@ -200,15 +217,22 @@
        self.onCancleBlock();
        
        if (self.popviewStyle == ZYFPopViewStyleCenter) {
-           self.popViewStart = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 120);
+           self.popViewStart = CGRectMake(self.bounds.size.width/2, self.bounds.size.height/2, 0, 0);
+           [UIView animateWithDuration:0.1 animations:^{
+               self.popBaseView.frame = self.popViewStart;
+               self.shadeView.alpha = 0;
+               [self removeFromSuperview];
+           }];
+       }else{
+           [UIView animateWithDuration:0.3 animations:^{
+               self.popBaseView.frame = self.popViewStart;
+               
+           } completion:^(BOOL finished) {
+               self.shadeView.alpha = 0;
+               [self removeFromSuperview];
+           }];
        }
-       [UIView animateWithDuration:0.3 animations:^{
-            self.popBaseView.frame = self.popViewStart;
-           
-        } completion:^(BOOL finished) {
-            self.shadeView.alpha = 0;
-            [self removeFromSuperview];
-        }];
+      
     }
 }
 
@@ -220,15 +244,21 @@
         
         if (self.popviewStyle == ZYFPopViewStyleCenter) {
             self.popViewStart = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 120);
+            [UIView animateWithDuration:0.1 animations:^{
+                self.popBaseView.frame = self.popViewStart;
+                self.shadeView.alpha = 0;
+                [self removeFromSuperview];
+            }];
+        }else{
+            [UIView animateWithDuration:0.3 animations:^{
+                self.popBaseView.frame = self.popViewStart;
+                
+            } completion:^(BOOL finished) {
+                self.shadeView.alpha = 0;
+                [self removeFromSuperview];
+            }];
         }
         
-        [UIView animateWithDuration:0.3 animations:^{
-            self.popBaseView.frame = self.popViewStart;
-            
-        } completion:^(BOOL finished) {
-            self.shadeView.alpha = 0;
-            [self removeFromSuperview];
-        }];
     }
     
 }

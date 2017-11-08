@@ -17,8 +17,6 @@
 		95A5D6991F3D5B83008B7805 /* ZYFPopviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6981F3D5B83008B7805 /* ZYFPopviewTests.m */; };
 		95A5D6A41F3D5B83008B7805 /* ZYFPopviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6A31F3D5B83008B7805 /* ZYFPopviewUITests.m */; };
 		95A5D6B31F3D5BCE008B7805 /* ZYFPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */; };
-		95A5D6BC1F3D98CF008B7805 /* baidu.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BA1F3D98CF008B7805 /* baidu.png */; };
-		95A5D6BD1F3D98CF008B7805 /* alipay.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BB1F3D98CF008B7805 /* alipay.png */; };
 		95A5D6BF1F3D9AEB008B7805 /* cha.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A5D6BE1F3D9AEB008B7805 /* cha.png */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +58,6 @@
 		95A5D6A51F3D5B83008B7805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95A5D6B11F3D5BCE008B7805 /* ZYFPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFPopView.h; sourceTree = "<group>"; };
 		95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFPopView.m; sourceTree = "<group>"; };
-		95A5D6BA1F3D98CF008B7805 /* baidu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baidu.png; sourceTree = "<group>"; };
-		95A5D6BB1F3D98CF008B7805 /* alipay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alipay.png; sourceTree = "<group>"; };
 		95A5D6BE1F3D9AEB008B7805 /* cha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cha.png; sourceTree = "<group>"; };
 		A0CEB789DF0C43D1B0513BC9 /* Pods-ZYFPopview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFPopview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYFPopview/Pods-ZYFPopview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,8 +142,6 @@
 				95A5D6B11F3D5BCE008B7805 /* ZYFPopView.h */,
 				95A5D6B21F3D5BCE008B7805 /* ZYFPopView.m */,
 				95A5D6BE1F3D9AEB008B7805 /* cha.png */,
-				95A5D6BA1F3D98CF008B7805 /* baidu.png */,
-				95A5D6BB1F3D98CF008B7805 /* alipay.png */,
 			);
 			path = ZYFPopview;
 			sourceTree = "<group>";
@@ -293,8 +287,6 @@
 				95A5D6BF1F3D9AEB008B7805 /* cha.png in Resources */,
 				95A5D68E1F3D5B83008B7805 /* LaunchScreen.storyboard in Resources */,
 				95A5D68B1F3D5B83008B7805 /* Assets.xcassets in Resources */,
-				95A5D6BD1F3D98CF008B7805 /* alipay.png in Resources */,
-				95A5D6BC1F3D98CF008B7805 /* baidu.png in Resources */,
 				95A5D6891F3D5B83008B7805 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
